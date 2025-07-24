@@ -1,4 +1,4 @@
-@import url("Your Font of Choice");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* || REST */
 * {
@@ -16,10 +16,24 @@ img {
 /* || VARIABLES */
 :root {
   /* COLORS */
+  --CLR-CYAN: #024846;
+  --CRL-TANGERINE: #e59500;
+  --CRL-WHITE: #ffffff;
 
   /* GRADIENTS */
 
   /* TYPOGRAPHY */
+  --FF1: "Poppins", serif;
+
+  /* TYPOGRAPHY MOB */
+  --TITLE-MOB: 600 32px/40px var(--FF1);
+  --SECTION-TITLE-MOB: 600 1rem/1.5rem var(--FF1);
+  --SECTION-SUBTITLE-MOB: normal 1.25rem/1.5rem var(--FF1);
+  --DESCRIPTION-MOB: normal 0.75rem/16px var(--FF1);
+  --DESCRIPTION2-MOB: normal 1rem/1.5rem var(--FF1);
+  --SMALL-MOB: normal 0.5625rem/1rem var(--FF1);
+  --BUTTON-MOB: normal 1rem/1.5rem var(--FF1);
+  --CTA-BUTTON-MOB: normal 0.5625rem/1.5rem var(--FF1);
 }
 
 /* || UTILITY CLASSES */
@@ -63,17 +77,4 @@ h2 {
 a:any-link {
   text-decoration: none;
   color: black;
-}
-
-.header{
-  width: 100%;
-  max-height: 548px;
-  background-image: url(./Assets/hero_background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.nav-header{
-  display: flex;
-  flex-flow: row;
 }
