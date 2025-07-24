@@ -64,3 +64,16 @@ a:any-link {
   text-decoration: none;
   color: black;
 }
+
+.header{
+  width: 100%;
+  max-height: 548px;
+  background-image: url(./Assets/hero_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-header{
+  display: flex;
+  flex-flow: row;
+}
