@@ -12,17 +12,24 @@
   <body>
     <!-- HEADER SECTION -->
     <header class="header" id="header">
-      <nav class="nav-container">
+      <nav class="nav-header">
         <!-- NAV-LOGO -->
         <a href="#">
-          <figure class="nav-logo">
-            <img src="" width="" height="" alt="code-logo" loading="lazy" />
+          <figure class="nav-header__logo">
+            <img src="./Assets/Logo_CODE_Header.png" width="959" height="528" alt="code-logo" loading="lazy" />
 
             <figcaption class="offscreen">code-logo</figcaption>
           </figure>
         </a>
         <!-- NAV-MENU -->
-        <div class="nav-menu" id="nav-menu">
+        <div class="nav-header__menu" id="nav-menu">
+
+          <figure class="nav__banner">
+            <img src="./Assets/toggle_visual.png" width="396" height="404" alt="nav-banner" loading="lazy" />
+
+            <figcaption class="offscreen">nav-banner</figcaption>
+          </figure>
+
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="nav-link">Home</a>
@@ -45,7 +52,7 @@
             <a href="#">
               <figure class="nav__close-icon">
                 <img
-                  src=""
+                  src="./Assets/icon_toggle_close.svg"
                   width=""
                   height=""
                   alt="close-icon"
@@ -57,95 +64,88 @@
             </a>
           </div>
 
-          <figure class="nav__banner">
-            <img src="" width="" height="" alt="nav-banner" loading="lazy" />
-
-            <figcaption class="offscreen">nav-banner</figcaption>
-          </figure>
-
           <!-- SOCIALS -->
           <div class="nav__socials">
             <a href="#" class="nav__socials-link" target="_blank">
               <figure class="nav__social">
                 <img
-                  src=""
-                  width=""
-                  height=""
+                  src="./Assets/icon_social_behance.svg"
+                  width="21"
+                  height="21"
                   alt="Behance-icon"
                   loading="lazy"
                 />
 
-                <figcaption class="offscreen">close-icon</figcaption>
+                <figcaption class="offscreen">behance-icon</figcaption>
               </figure>
             </a>
 
-            <a href="#" class="nav__socials-link" target="_blank">
+             <a href="#" class="nav__socials-link" target="_blank">
               <figure class="nav__social">
                 <img
-                  src=""
-                  width=""
-                  height=""
-                  alt="Dribble-icon"
+                  src="./Assets/icon_social_dribble.svg"
+                  width="19"
+                  height="18"
+                  alt="dribble-icon"
                   loading="lazy"
                 />
 
-                <figcaption class="offscreen">close-icon</figcaption>
+                <figcaption class="offscreen">dribble-icon</figcaption>
               </figure>
-            </a>
 
             <a href="#" class="nav__socials-link" target="_blank">
               <figure class="nav__social">
                 <img
-                  src=""
-                  width=""
-                  height=""
+                  src="./Assets/icon_social_facebook.svg"
+                  width="22"
+                  height="22"
                   alt="Facebook-icon"
                   loading="lazy"
                 />
 
-                <figcaption class="offscreen">close-icon</figcaption>
+                <figcaption class="offscreen">facebook-icon</figcaption>
               </figure>
             </a>
 
             <a href="#" class="nav__socials-link" target="_blank">
               <figure class="nav__social">
                 <img
-                  src=""
-                  width=""
-                  height=""
+                  src="./Assets/icon_social_instagram.svg"
+                  width="20"
+                  height="20"
                   alt="Instagram-icon"
                   loading="lazy"
                 />
 
-                <figcaption class="offscreen">close-icon</figcaption>
+                <figcaption class="offscreen">instagram-icon</figcaption>
               </figure>
             </a>
 
             <a href="#" class="nav__socials-link" target="_blank">
               <figure class="nav__social">
                 <img
-                  src=""
-                  width=""
-                  height=""
+                  src="/Assets/icon_social_linkedin.svg"
+                  width="22"
+                  height="22"
                   alt="LinkedIn-icon"
                   loading="lazy"
                 />
 
-                <figcaption class="offscreen">close-icon</figcaption>
+                <figcaption class="offscreen">linkedin-icon</figcaption>
               </figure>
             </a>
 
             <a href="#" class="nav__socials-link" target="_blank">
               <figure class="nav__social">
                 <img
-                  src=""
-                  width=""
-                  height=""
+                  src="./Assets/icon_toggle_youtube.svg"
+                  width="9"
+                  height="9"
                   alt="Youtube-icon"
                   loading="lazy"
                 />
 
-                <figcaption class="offscreen">close-icon</figcaption>
+                <figcaption class="offscreen">youtube-icon</figcaption>
               </figure>
             </a>
           </div>
@@ -157,7 +157,12 @@
         <div class="nav__toggle-menu" id="toggle-menu">
           <a href="#">
             <figure class="toogle-icon">
-              <img src="" width="" height="" alt="toggle-menu" loading="lazy" />
+              <img 
+              src="./Assets/icon_burger.svg" 
+              width="28" 
+              height="20" 
+              alt="toggle-menu" 
+              loading="lazy" />
 
               <figcaption class="offscreen">toggle-menu</figcaption>
             </figure>
@@ -167,28 +172,33 @@
       <div class="divisor"></div>
 
       <!-- HERO SECTION -->
-      <section class="hero-section">
-        <div class="hero-section__content">
+      <section class="hero">
+        <div class="hero__content">
           <p class="element-da">Digital Agency</p>
-          <h1 class="hero-title">
+          <h1 class="hero__content-title">
             Enhancing Enterprises and Shaping
             <span class="title-span"> Digital</span> Experiences
           </h1>
-          <p class="hero-description">
+          <p class="hero__content-description">
             We build digital solutions that help businesses scale, adapt, and
             thrive in the evolving digital economy; through smart design,
             scalable systems, and future-ready experiences.
           </p>
 
-          <a href="#">Lets Talk</a>
-          <a href="#">See Our Work</a>
+          <a href="#" class="hero__content-CTA--filled">Lets Talk</a>
+          <a href="#" class="hero__content-CTA--outlined">See Our Work</a>
         </div>
 
-        <div class="hero-section__banner">
-          <figure class="hero-banner">
-            <img src="" width="" height="" alt="hero-banner" loading="lazy" />
+        <div class="hero__visual">
+          <figure class="hero__visual-image">
+            <img 
+            src="./Assets/hero-visual-alt.png" 
+            width="736" 
+            height="683" 
+            alt="visual-image" 
+            loading="lazy" />
 
-            <figcaption class="offscreen">hero-banner</figcaption>
+            <figcaption class="offscreen">visual-image</figcaption>
           </figure>
         </div>
       </section>
