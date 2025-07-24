@@ -79,6 +79,19 @@ a:any-link {
   color: black;
 }
 
+<<<<<<< HEAD
+.header{
+  width: 100%;
+  max-height: 548px;
+  background-image: url(./Assets/hero_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-header{
+  display: flex;
+  flex-flow: row;
+=======
 /* SERVICES */
 .services {
   display: flex;
@@ -265,6 +278,7 @@ a:any-link {
   height: 180px;
   background-color: var(--CRL-WHITE);
   border-radius: 12px;
+<<<<<<< HEAD
   margin-top: 85px;
 }
 
@@ -308,3 +322,7 @@ a:any-link {
 .about__card-description-position-color{
   color: var(--CRL-TANGERINE);
 }
+=======
+>>>>>>> 4cffd1ba253762e88d05ac2240b92ffbba676a67
+}
+>>>>>>> 565ce0f6fb4c084c5a038fb3c42649f01e3dfe04
