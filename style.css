@@ -1,4 +1,4 @@
-@import url("Your Font of Choice");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* || REST */
 * {
@@ -16,10 +16,24 @@ img {
 /* || VARIABLES */
 :root {
   /* COLORS */
+  --CLR-CYAN: #024846;
+  --CRL-TANGERINE: #e59500;
+  --CRL-WHITE: #ffffff;
 
   /* GRADIENTS */
 
   /* TYPOGRAPHY */
+  --FF1: "Poppins", serif;
+
+  /* TYPOGRAPHY MOB */
+  --TITLE-MOB: 600 32px/40px var(--FF1);
+  --SECTION-TITLE-MOB: 600 1rem/1.5rem var(--FF1);
+  --SECTION-SUBTITLE-MOB: normal 1.25rem/1.5rem var(--FF1);
+  --DESCRIPTION-MOB: normal 0.75rem/16px var(--FF1);
+  --DESCRIPTION2-MOB: normal 1rem/1.5rem var(--FF1);
+  --SMALL-MOB: normal 0.5625rem/1rem var(--FF1);
+  --BUTTON-MOB: normal 1rem/1.5rem var(--FF1);
+  --CTA-BUTTON-MOB: normal 0.5625rem/1.5rem var(--FF1);
 }
 
 /* || UTILITY CLASSES */
@@ -63,4 +77,184 @@ h2 {
 a:any-link {
   text-decoration: none;
   color: black;
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.services_title {
+  font: var(--SECTION-TITLE-MOB);
+  color: var(--CLR-CYAN);
+  text-align: center;
+}
+
+.services_subtitle {
+  font: var(--SECTION-SUBTITLE-MOB);
+  color: var(--CLR-CYAN);
+  text-align: center;
+  margin-top: 4px;
+}
+
+.services_subtitle-color {
+  color: var(--CRL-TANGERINE);
+}
+
+.services_card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--CLR-CYAN);
+  width: 380px;
+  padding: 32px 0px 32px 0px;
+  border-radius: 0.3125rem;
+  margin-top: 14px;
+}
+
+.services_card-title {
+  font: var(--TITLE-MOB);
+  color: var(--CRL-WHITE);
+  text-align: center;
+}
+
+.services_card-btns {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.services_card-btn {
+  font: var(--CTA-BUTTON-MOB);
+  color: var(--CRL-WHITE);
+  border: 1px solid var(--CRL-WHITE);
+  border-radius: 15px;
+  padding: 0px 8px 0px 8px;
+}
+
+.services_card-CTA {
+  font: var(--CTA-BUTTON-MOB);
+  color: var(--CRL-WHITE);
+  border: 1px solid var(--CRL-WHITE);
+  border-radius: 15px;
+  padding: 0px 16px 0px 16px;
+}
+
+/* REVIEW */
+.review {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.review__title {
+  font: var(--SECTION-TITLE-MOB);
+  color: var(--CLR-CYAN);
+  text-align: center;
+}
+
+.review__subtitle {
+  font: var(--SECTION-SUBTITLE-MOB);
+  color: var(--CLR-CYAN);
+  text-align: center;
+  margin-top: 16px;
+}
+
+.review__subtitle-color {
+  color: var(--CRL-TANGERINE);
+}
+
+.review__card {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--CLR-CYAN);
+  width: 280px;
+  border-radius: 0.375rem;
+  padding: 36px 16px 20px 16px;
+  margin-top: 32px;
+}
+
+.review__card-rating {
+  display: flex;
+  flex-flow: row;
+  align-items: left;
+  gap: 6px;
+}
+
+.review__card-rating-number {
+  font: var(--SMALL-MOB);
+  color: var(--CRL-WHITE);
+}
+
+.review__card_quotes {
+  margin-left: auto;
+}
+
+.review__card-copy {
+  font: var(--SMALL-MOB);
+  color: var(--CRL-WHITE);
+  margin-top: 32px;
+}
+
+.review__card-avatar {
+  display: flex;
+  flex-flow: column;
+  gap: 0px;
+  margin-top: 40px;
+}
+
+.review__card-avatar-name {
+  font: var(--DESCRIPTION2-MOB);
+  color: var(--CRL-TANGERINE);
+}
+
+.review__card-avatar-position {
+  font: var(--SMALL-MOB);
+  color: var(--CRL-WHITE);
+}
+
+/* ABOUT US */
+.about {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: var(--CLR-CYAN);
+}
+
+.about__title {
+  font: var(--SECTION-TITLE-MOB);
+  color: var(--CRL-WHITE);
+  text-align: center;
+}
+
+.about__subtitle {
+  font: var(--SECTION-SUBTITLE-MOB);
+  color: var(--CRL-WHITE);
+  text-align: center;
+}
+
+.about__description {
+  font: var(--DESCRIPTION-MOB);
+  color: var(--CRL-WHITE);
+  text-align: center;
+}
+
+.about__card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.about__card-visual {
+  width: 200px;
+  height: 180px;
+  background-color: var(--CRL-WHITE);
+  border-radius: 12px;
 }
