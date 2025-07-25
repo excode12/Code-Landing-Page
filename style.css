@@ -25,8 +25,7 @@ img {
   /* TYPOGRAPHY */
   --FF1: "Poppins", serif;
 
-  /* TYPOGRAPHY MOB */
-  --TITLE-MOB: 600 32px/40px var(--FF1);
+--TITLE-MOB: 600 2rem/40px var(--FF1);
   --SECTION-TITLE-MOB: 600 1rem/1.5rem var(--FF1);
   --SECTION-SUBTITLE-MOB: normal 1.25rem/1.5rem var(--FF1);
   --DESCRIPTION-MOB: normal 0.75rem/16px var(--FF1);
@@ -34,6 +33,11 @@ img {
   --SMALL-MOB: normal 0.5625rem/1rem var(--FF1);
   --BUTTON-MOB: normal 1rem/1.5rem var(--FF1);
   --CTA-BUTTON-MOB: normal 0.5625rem/1.5rem var(--FF1);
+  --BTN-SHADOW: 0rem .125rem .1875rem .0187rem #00000051;
+
+  /* TYPOGRAPHY DSK */
+  --NAV-LINKS: normal 1.25rem var(--FF1);
+  --TEXT-PRESET-3: 600 1.875rem var(--FF1);
 }
 
 /* || UTILITY CLASSES */
@@ -76,32 +80,154 @@ h2 {
 
 a:any-link {
   text-decoration: none;
-  color: black;
 }
 
 /* || HEADER */
-.header{
+.header {
   display: flex;
   flex-flow: column;
+  position: relative;
+  height: 568px;
   width: 100%;
+  max-height: 548px;
   background-image: url(./Assets/hero_background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
-  margin-bottom: 16px;
-  overflow-y: hidden;
 }
 
-.nav-header{
+/* || TOOGLE-MENU */
+.toogle-menu {
+  display: none;
+  flex-flow: column;
+  position: absolute;
+  width: 100%;
+  height: 821px;
+  background-color: var(--CLR-CYAN);
+}
+
+.toggle-menu__nav {
   display: flex;
   flex-flow: row;
-  padding: 1rem 0rem;
-  margin-bottom: 32px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 13px 21px;
+}
+
+.toggle__logo img {
+  width: 73px;
+  height: 40px;
+}
+
+.icon-toggle__close {
+  width: 24px;
+}
+
+.toggle-menu__content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.toggle-menu__visual img {
+  width: 198px;
+  height: 202px;
+  margin-top: 30px;
+}
+
+.toggle-menu__list {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  list-style: none;
+  gap: 0.625rem;
+  margin-top: 52px;
+  font: var(--TEXT-PRESET-3);
+}
+
+.link {
+  color: var(--CRL-WHITE);
+}
+
+.cta-btn__connect {
+  display: flex;
+  justify-content: center;
+  width: 136px;
+  height: 37px;
+  padding: .375rem .6875rem ;
+  margin-top: 20px;
+  font: var(--BUTTON-MOB);
+  color: var(--CRL-WHITE);
+  background-color: #1F7A77;
+  border-radius: 13px;
+  box-shadow: var(--BTN-SHADOW) ;
+}
+
+.toggle-menu__social-links{
+  display: flex;
+  flex: row;
+  gap: 1.5rem;
+  margin-top: 40px;
+}
+.social-link img{
+  width: 20px;
+  height: 20px;
+}
+.toggle-footer{
+  text-decoration: underline;
+  margin-top: 30px;
+  font: var(--DESCRIPTION-MOB);
+  color: #959595 ;
+}
+/* || NAV-HEADER */
+.nav-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 21px;
 }
 .nav-header__logo {
   width: 73px;
-  height: 40px ;
+  height: 40px;
 }
+
+.nav-header__links {
+  display: none;
+  flex-flow: row;
+  gap: 20rem;
+}
+.nav-list {
+  display: flex;
+  flex-flow: row;
+  gap: 44px;
+  list-style: none;
+  font: var(--NAV-LINKS);
+}
+
+.nav-link {
+  color: var(--CLR-CYAN);
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  width: 173px;
+  height: 40px;
+  border-radius: 78px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--CLR-CYAN);
+  font: var(--BUTTON-MOB);
+  color: var(--CLR-CYAN);
+}
+
+.divider {
+  display: none;
+  width: 100%;
+  height: 1px;
+  background-color: var(--CLR-CYAN);
+}
+
+/*|| HERO-SECTION  */
 
 
 /* SERVICES */
@@ -290,11 +416,6 @@ a:any-link {
   height: 180px;
   background-color: var(--CRL-WHITE);
   border-radius: 12px;
-<<<<<<< HEAD
-}
-=======
-<<<<<<< HEAD
-  margin-top: 85px;
 }
 
 .about__card-visual-image img {
@@ -337,8 +458,3 @@ a:any-link {
 .about__card-description-position-color{
   color: var(--CRL-TANGERINE);
 }
-=======
->>>>>>> 4cffd1ba253762e88d05ac2240b92ffbba676a67
-}
->>>>>>> 565ce0f6fb4c084c5a038fb3c42649f01e3dfe04
->>>>>>> dcdbd41b53adbbb64dab1747f8b10a2614123ad3
