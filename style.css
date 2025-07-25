@@ -251,6 +251,13 @@ a:any-link {
   flex-flow: column;
   align-items: center;
   background-color: var(--CLR-CYAN);
+  padding: 18px 0px 18px 0px;
+}
+
+.about__content{
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
 }
 
 .about__title {
@@ -278,8 +285,60 @@ a:any-link {
 }
 
 .about__card-visual {
+  position: relative;
   width: 200px;
   height: 180px;
   background-color: var(--CRL-WHITE);
   border-radius: 12px;
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+  margin-top: 85px;
+}
+
+.about__card-visual-image img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about__card-visual-tag {
+  position: absolute;
+  z-index: 10;
+  background-color: var(--CRL-TANGERINE);
+  display: inline-block;
+  font: var(--DESCRIPTION-MOB);
+  color: var(--CRL-WHITE);
+  padding: 8px 12px 8px 12px;
+  border-radius: 16px;
+  z-index: 10;
+  bottom: 10%;
+  left: 5%;
+}
+
+.about__card-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.about__card-description-name {
+  font: var(--SECTION-SUBTITLE-MOB);
+  color: var(--CRL-WHITE);
+}
+
+.about__card-description-position {
+  font: var(--DESCRIPTION-MOB);
+  color: var(--CRL-WHITE);
+}
+
+.about__card-description-position-color{
+  color: var(--CRL-TANGERINE);
+}
+=======
+>>>>>>> 4cffd1ba253762e88d05ac2240b92ffbba676a67
+}
+>>>>>>> 565ce0f6fb4c084c5a038fb3c42649f01e3dfe04
+>>>>>>> dcdbd41b53adbbb64dab1747f8b10a2614123ad3
