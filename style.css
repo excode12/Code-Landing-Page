@@ -42,7 +42,13 @@ img {
 
   /* TYPOGRAPHY DSK */
   --NAV-LINKS: normal 1.25rem var(--FF1);
-  --TEXT-PRESET-3: 600 1.875rem var(--FF1);
+  --TEXT-PRESET-1-DSK: bold 5rem var(--FF1);
+  --TEXT-PRESET-2-DSK: 800 2.5rem var(--FF1);
+  --TEXT-PRESET-3-DSK: 600 1.875rem var(--FF1);
+  --SUBTITLE: normal 1.5625rem var(--FF1);
+  --BODY: normal 1.25rem var(--FF1);
+  --SMALL: normal 1rem var(--FF1);
+  --BUTTON-DSK: 600 1.25rem var(--FF1);
 }
 
 /* || UTILITY CLASSES */
@@ -237,7 +243,7 @@ a:any-link {
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .hero__content {
@@ -548,7 +554,7 @@ a:any-link {
   color: var(--CRL-TANGERINE);
 }
 
-/* FAQ */
+/* || FAQ */
 .faq {
   display: flex;
   flex-flow: column;
@@ -615,9 +621,8 @@ a:any-link {
   font: var(--SMALL-MOB);
   color: var(--CRL-WHITE);
 }
-/* || FAQ */
 
-/* FOOTER */
+/* || FOOTER */
 .footer {
   display: flex;
   flex-flow: column;
@@ -659,4 +664,4 @@ a:any-link {
   color: var(--CRL-WHITE);
   opacity: 0.5;
 }
-/* || FOOTER */
+
