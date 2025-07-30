@@ -649,8 +649,13 @@ a:any-link {
   font: var(--SMALL-MOB);
   color: var(--CRL-WHITE);
 }
-
-.faq__card-description {
+.faq__card-answer-open{
+  margin-top: 8px;
+  font: var(--SMALL-MOB);
+  color: var(--CRL-WHITE);
+}
+.faq__card-answer {
+  display: none;
   margin-top: 8px;
   font: var(--SMALL-MOB);
   color: var(--CRL-WHITE);
