@@ -112,10 +112,14 @@ a:any-link {
 .toggle-menu {
   display: none;
   flex-flow: column;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  justify-content: flex-start;
   width: 100%;
-  height: 821px;
+  height: 100vh;
   background-color: var(--CLR-CYAN);
+  padding-bottom: 1.75rem;
+  z-index: 12;
 }
 
 .toggle-menu__nav {
@@ -154,7 +158,7 @@ a:any-link {
   list-style: none;
   gap: 0.625rem;
   margin-top: 52px;
-  font: var(--TEXT-PRESET-3);
+  font: var(--DESCRIPTION2-MOB);
 }
 
 .toggle-menu__social-links {
