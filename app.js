@@ -1,6 +1,6 @@
-// SELECTING DOM ELEMENTS 
+// HAMBURGER MENU
+// SELECTING DOM ELEMENTS
 document.addEventListener("DOMContentLoaded", () => {
-
   // ACCESSING THE HTML ELEMENTS
   const getMenu = document.getElementById("get-menu");
   const toggleMenu = document.querySelector(".toggle-menu");
@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleMenu.style.display = "flex";
   });
 
-  closeIcon.addEventListener('click', () =>{
+  closeIcon.addEventListener("click", () => {
     toggleMenu.style.display = "none";
   });
 });
+
+// FAQ
+
