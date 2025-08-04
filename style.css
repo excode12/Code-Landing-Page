@@ -441,6 +441,8 @@ a:any-link {
   font: var(--SECTION-TITLE-MOB);
 }
 .separator {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 1rem;
   color: var(--CLR-CYAN);
 }
@@ -485,7 +487,6 @@ a:any-link {
 }
 .project-card__footer-subtitle {
   font: var(--SECTION-SUBTITLE-MOB);
-  /* color: var(--CLR-CYAN); */
 }
 .project-card__footer-separator {
   display: inline-block;
@@ -875,10 +876,10 @@ a:any-link {
     margin-bottom: 17px;
   }
 
-  /* SERVICES */
+  /* || SERVICES */
   .services {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .services_title {
@@ -929,20 +930,69 @@ a:any-link {
     margin-top: 52px;
   }
 
-  /* REVIEW */
-  .review {
-    margin-bottom: 32px;
+  /* || FEATURED PROJECTS */
+  /* || HEADING */
+  .featured-projects {
+    margin-top: 6.25rem;
   }
-
+  .projects__header {
+    margin-bottom: 3.3125rem;
+    align-self: flex-start;
+    margin-left: 21%;
+  }
+  .projects__header-small {
+    font: var(--SUBTITLE);
+  }
+  .separator {
+    font-size: 3rem;
+  }
+  .projects__header-big {
+    font: var(--TEXT-PRESET-1-DSK);
+    margin-top: -2.5rem;
+  }
+  .projects__description {
+    font: var(--SUBTITLE);
+    margin-top: -1.25rem;
+  }
+  .highlighted {
+    color: var(--CRL-TANGERINE);
+  }
+  /* || PROJECT-CARDS */
+  .projects-cards {
+    flex-flow: row;
+    gap: 4rem;
+  }
+  .project-card {
+    width: 581px;
+    height: 700px;
+  }
+  .project-card__visual img {
+    height: 480px;
+  }
+  .project-card__footer {
+    padding: 1.875rem;
+  }
+  .project-card__footer-title {
+    font: var(--BUTTON-DSK);
+  }
+  .project-card__footer-subtitle {
+    font: var(--TEXT-PRESET-3-DSK);
+  }
+  .project-card__footer-separator {
+    border-bottom: 3px solid #000000;
+  }
+  /* || REVIEW */
+  .review {
+    margin-bottom: 2rem;
+    margin-top: 6.25rem;
+  }
   .review__title {
     font: var(--SUBTITLE);
   }
-
   .review__subtitle {
     font: var(--TEXT-PRESET-3-DSK);
     margin-top: 16px;
   }
-
   .review__subtitle-color {
     color: var(--CRL-TANGERINE);
   }
@@ -983,15 +1033,13 @@ a:any-link {
     color: #e1e1e1;
   }
 
-  /* ABOUT US */
+  /* || ABOUT US */
   .about {
     padding: 142px 0px 156px 0px;
   }
-
   .about__content {
     gap: 16px;
   }
-
   .about__title {
     font: var(--SUBTITLE);
   }
@@ -1049,30 +1097,24 @@ a:any-link {
   .faq {
     padding: 48px 0px 156px 0px;
   }
-
   .faq__title {
     font: var(--SUBTITLE);
   }
-
   .faq__subtitle {
     font: var(--TEXT-PRESET-2-DSK);
   }
-
   .faq__cards {
     gap: 24px;
     padding: 0px 172px;
     margin-top: 76px;
   }
-
   .faq__card {
     padding: 12px;
     border-radius: 10px;
   }
-
   .faq__card-title-copy {
     font: var(--BODY);
   }
-
   .faq__card-title-more {
     width: 32px;
     height: 32px;
@@ -1080,12 +1122,12 @@ a:any-link {
     border-radius: 32px;
     font: var(--BODY);
   }
-
-  .faq__card-description {
-    margin-top: 12px;
+  .faq__card-answer-open {
     font: var(--SMALL);
   }
-
+  .faq__card-answer {
+    font: var(--SMALL);
+  }
   /* || FOOTER */
   .footer {
     display: flex;
