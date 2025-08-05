@@ -673,7 +673,7 @@ a:any-link {
   padding: 16px 0px 40px 0px;
 }
 
-.faq__title {
+.faq-title {
   position: relative;
   z-index: 2;
   font: var(--SECTION-TITLE-MOB);
@@ -681,13 +681,13 @@ a:any-link {
   text-align: center;
 }
 
-.faq__subtitle {
+.faq-subtitle {
   font: var(--SECTION-SUBTITLE-MOB);
   color: var(--CRL-WHITE);
   text-align: center;
 }
 
-.faq__cards {
+.faq-cards {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -697,25 +697,25 @@ a:any-link {
   margin-top: 16px;
 }
 
-.faq__card {
+.faq-card {
   background-color: rgba(217, 217, 217, 0.5);
   width: 100%;
   padding: 8px;
   border-radius: 6px;
 }
 
-.faq__card-question {
+.faq-card__question {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
 
-.faq__card-question-text {
+.faq-card__question-text {
   font: var(--SMALL-MOB);
   color: var(--CRL-WHITE);
 }
 
-.faq__card-icon {
+.faq-card__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -727,13 +727,13 @@ a:any-link {
   color: var(--CRL-WHITE);
 }
 
-.faq__card-answer {
+.faq-card__answer {
   display: none;
   margin-top: 8px;
   font: var(--SMALL-MOB);
   color: var(--CRL-WHITE);
 }
-.faq__card-answer--open {
+.faq-card__answer--open {
   font: var(--SMALL-MOB);
   color: var(--CRL-WHITE);
   display: block;
@@ -1098,36 +1098,36 @@ a:any-link {
   .faq {
     padding: 48px 0px 156px 0px;
   }
-  .faq__title {
+  .faq-title {
     font: var(--SUBTITLE);
   }
-  .faq__subtitle {
+  .faq-subtitle {
     font: var(--TEXT-PRESET-2-DSK);
   }
-  .faq__cards {
+  .faq-cards {
     gap: 24px;
     padding: 0px 172px;
     margin-top: 76px;
   }
-  .faq__card {
+  .faq-card {
     padding: 12px;
     border-radius: 10px;
   }
-  .faq__card-question-text {
+  .faq-card__question-text {
     font: var(--BODY);
   }
-  .faq__card-icon {
+  .faq-card__icon {
     width: 32px;
     height: 32px;
     border: 1.5px solid var(--CRL-WHITE);
     border-radius: 32px;
     font: var(--BODY);
   }
-  .faq__card-answer {
+  .faq-card__answer {
     font: var(--SMALL);
     width: 98%;
   }
-  .faq__card-answer--open {
+  .faq-card__answer--open {
     font: var(--SMALL);
     width: 98%;
   }
