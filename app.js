@@ -16,4 +16,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // FAQ
+// Nodelist
+const faqItems = document.querySelectorAll(".faq-card__question");
 
+faqItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const currentAnswer = item.nextElementSibling;
+    const currentIcon = item.querySelector(".faq-card__icon");
+
+    // Close all other answers
+    faqItems.forEach((otherItem) => {
+      const otherAnswer = otherItem.nextElementSibling;
+      const otherIcon = otherItem.querySelector(".faq-card__icon");
+
+      if (otherItem !== item) {
+        otherAnswer.classList.remove("show");
+        otherIcon.textContent = "+";
+      }
+    });
+
+    // Toggle current answer
+    const isOpen = currentAnswer.classList.contains("show");
+    currentAnswer.classList.toggle("show", !isOpen);
+    currentIcon.textContent = isOpen ? "+" : "-";
+  });
+});
