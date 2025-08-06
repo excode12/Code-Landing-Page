@@ -866,7 +866,7 @@ a:any-link {
   margin-top: 44px;
 }
 
-.footer__copy {
+.footer__copy{
   width: 100%;
   margin-top: 44px;
   display: flex;
@@ -876,7 +876,10 @@ a:any-link {
   color: var(--CRL-WHITE);
   opacity: 0.5;
 }
-
+.privacy-policy a{
+  font: var(--DESCRIPTION-MOB);
+  color: var(--CRL-WHITE)
+}
 /* || DESKTOP VIEW  */
 @media screen and (min-width: 1024px) {
   /* || NAV-HEADER */
