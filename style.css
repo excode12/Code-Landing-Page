@@ -669,6 +669,8 @@ a:any-link {
 
 .about__content {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: column;
   gap: 8px;
 }
@@ -686,6 +688,7 @@ a:any-link {
 }
 
 .about__description {
+  width: 350px;
   font: var(--DESCRIPTION-MOB);
   color: var(--CRL-WHITE);
   text-align: center;
@@ -805,7 +808,7 @@ a:any-link {
 }
 .faq-card:focus,
 .faq-card:hover{
-  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.6);
 }
 
 .faq-card__question {
@@ -1192,6 +1195,7 @@ a:any-link {
   }
 
   .about__description {
+    width: 100%;
     font: var(--BODY);
   }
 
