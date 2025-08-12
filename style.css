@@ -609,6 +609,14 @@ a:any-link {
   color: var(--CRL-TANGERINE);
 }
 
+.reviews-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 .review__card {
   display: flex;
   flex-flow: column;
