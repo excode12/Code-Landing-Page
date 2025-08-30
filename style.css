@@ -366,12 +366,13 @@ a:any-link {
   padding: 0.3475rem 0.6956rem;
   border-radius: 54px;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 .hero-cta__filled:hover {
   transform: scale(1.05);
 }
 .hero-cta__filled:hover::before {
-  animation: shine 1.5s ease-out infinite;
+  animation: shine 1.5s ease-out;
 }
 .hero-cta__filled::before {
   content: "";
