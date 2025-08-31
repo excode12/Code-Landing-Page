@@ -593,7 +593,7 @@ a:any-link {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  min-height: 550px;
   overflow: hidden;
 }
 
@@ -1140,15 +1140,16 @@ a:any-link {
   }
   /* || REVIEW */
   .review {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     margin-top: 6.25rem;
+    min-height: 800px;
   }
   .review__title {
     font: var(--SUBTITLE);
   }
   .review__subtitle {
     font: var(--TEXT-PRESET-3-DSK);
-    margin-top: 16px;
+    margin-top: 2px;
   }
   .review__subtitle-color {
     color: var(--CRL-TANGERINE);
