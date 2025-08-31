@@ -593,7 +593,7 @@ a:any-link {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 550px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -627,8 +627,13 @@ a:any-link {
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: center center;
+  transition: transform 1.5s ease;
 
 }
+.card-container:hover .review__card {
+  animation-play-state: paused;
+}
+
 
 .review__card-rating {
   display: flex;
@@ -1142,7 +1147,7 @@ a:any-link {
   .review {
     margin-bottom: 2.5rem;
     margin-top: 6.25rem;
-    min-height: 800px;
+    height: 900px;
   }
   .review__title {
     font: var(--SUBTITLE);

@@ -44,25 +44,26 @@ faqItems.forEach((item) => {
 
 // REVIEW CARDS
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".review__card");
+  const cards = Array.from(document.querySelectorAll(".review__card"));
+  let angleStep = -10;
 
-  function rotateCards() {
-    let angle = 0;
-
+  function applyStackTransforms() {
     cards.forEach((card, index) => {
-      if (card.classList.contains("away")) {
-        card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`;
-      } else {
-        card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
-        angle -= 10;
-        card.style.zIndex = cards.length - index;
-      }
+      card.style.zIndex = cards.length - index;
+      card.style.transform = `translate(-50%, -50%) rotate(${
+        angleStep * index
+      }deg)`;
+      card.style.transition = "transform 1.5s ease, z-index 0.5s ease";
     });
   }
 
-  rotateCards();
+  function shuffleStack() {
+    const topCard = cards.shift();
+    cards.push(topCard);
+    applyStackTransforms();
+  }
+
+  applyStackTransforms();
+
+  setInterval(shuffleStack, 5000); 
 });
-
-
-
-
