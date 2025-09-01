@@ -6,6 +6,7 @@
     <meta name="description" content="this is the home page for code website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>consortium of digital engineers</title>
   </head>
   <body>
@@ -61,7 +62,7 @@
     <!--|| HEADER -->
     <section class="header" id="header">
       <div class="hero">
-        <div class="hero__content">
+        <div class="hero__content" data-aos="zoom-in">
           <p class="hero__content-header nowrap">Digital Agency</p>
           <p class="hero__content-title">
             ENHANCING ENTERPRISES<br />
@@ -81,7 +82,7 @@
           </p>
         </div>
 
-        <div class="hero__visual">
+        <div class="hero__visual" data-aos="zoom-in">
           <figure class="hero__visual-image">
             <img
               src="assets/hero-visual-alt.png"
@@ -215,12 +216,16 @@
 
     <!-- SERVICES -->
     <section class="services">
-      <h3 class="services_title">Services We Provide</h3>
-      <h2 class="services_subtitle">
-        We <span class="services_subtitle-color">Craft</span> Engaging Digital
-        Experiences
-      </h2>
-      <div class="services_card">
+      <div class="services__header" data-aos="fade-up"
+     data-aos-duration="1000">
+        <h3 class="services_title">Services We Provide</h3>
+        <h2 class="services_subtitle">
+          We <span class="services_subtitle-color">Craft</span> Engaging Digital
+          Experiences
+        </h2>
+      </div>
+      <div class="services_card"  data-aos="fade-up"
+      data-aos-duration="1000">
         <h1 class="services_card-title">Web development</h1>
         <div class="services_card-btns">
           <p class="services_card-btn">Web design</p>
@@ -234,7 +239,8 @@
         <a href="#" class="services_card-cta">Find out more</a>
       </div>
 
-      <div class="services_card">
+      <div class="services_card"  data-aos="fade-up"
+     data-aos-duration="1000">
         <h1 class="services_card-title">Product Design</h1>
         <div class="services_card-btns">
           <p class="services_card-btn">Mobile App Design</p>
@@ -251,7 +257,8 @@
 
     <!-- FEATURED-PROJECTS -->
     <section class="featured-projects">
-      <div class="projects__header">
+      <div class="projects__header" data-aos="fade-up"
+     data-aos-duration="1000">
         <p class="projects__header-small">
           UI/UX Design <span class="separator">•</span> Web Development
           <span class="separator">•</span> Branding
@@ -264,7 +271,7 @@
       </div>
 
       <div class="projects-cards">
-        <div class="project-card">
+        <div class="project-card"  data-aos="fade-right">
           <div class="project-card__header">
             <a href="#">
               <figure class="project-card__visual">
@@ -291,7 +298,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-left">
           <div class="project-card__header">
             <a href="#">
               <figure class="project-card__visual">
@@ -324,299 +331,301 @@
 
     <!-- review section -->
     <section class="review">
-      <div class="review__header">
+      <div class="review__header" data-aos="fade-up"
+     data-aos-duration="1000">
         <h3 class="review__title">Reviews</h3>
         <h2 class="review__subtitle">
           What <span class="review__subtitle-color">Our Clients</span> Say About
           Us
         </h2>
-      </div> 
+      </div>
 
       <div class="stack-area">
-        <div class="reviews-container">
-        <!-- \\CARD-01 -->
-        <div class="review__card">
-          <figure class="review__avatar">
-            <img
-              src="assets/review_avatar.png"
-              alt="client-avatar"
-              width="60"
-              height="60"
-              loading="lazy"
-            />
-            <figcaption class="offscreen">review__avatar</figcaption>
-          </figure>
+        <div class="reviews-container" >
+          <!-- \\CARD-01 -->
+          <div class="review__card">
+            <figure class="review__avatar">
+              <img
+                src="assets/review_avatar.png"
+                alt="client-avatar"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+              <figcaption class="offscreen">review__avatar</figcaption>
+            </figure>
 
-          <div class="review__card-rating">
-            <figure class="review__card-rating-icon">
+            <div class="review__card-rating">
+              <figure class="review__card-rating-icon">
+                <img
+                  src="assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt=""
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <p class="review__card-rating-number">(5.0)</p>
+            </div>
+
+            <figure class="review__card_quotes">
               <img
-                src="assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
+                src="/assets/icon_review_quote.svg"
                 alt=""
-                width="15"
+                width="40"
                 height="auto"
                 loading="lazy"
               />
               <figcaption class="offscreen">review stars</figcaption>
             </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <p class="review__card-rating-number">(5.0)</p>
+
+            <p class="review__card-copy">
+              We partnered with Code for a complete website redesign, and the
+              results exceeded expectations.Their attention to detail and
+              thoughtful execution made the entire process smooth and impactful.
+              The new layout is clean, responsive, and aligned seamlessly with
+              our brand identity.
+            </p>
+
+            <div class="review__card-avatar">
+              <p class="review__card-avatar-name">Codde</p>
+              <p class="review__card-avatar-position">Lennox</p>
+            </div>
           </div>
 
-          <figure class="review__card_quotes">
-            <img
-              src="/assets/icon_review_quote.svg"
-              alt=""
-              width="40"
-              height="auto"
-              loading="lazy"
-            />
-            <figcaption class="offscreen">review stars</figcaption>
-          </figure>
+          <!-- \\CARD-02 -->
 
-          <p class="review__card-copy">
-            We partnered with Code for a complete website redesign, and the
-            results exceeded expectations.Their attention to detail and
-            thoughtful execution made the entire process smooth and impactful.
-            The new layout is clean, responsive, and aligned seamlessly with our
-            brand identity.
-          </p>
+          <div class="review__card">
+            <figure class="review__avatar">
+              <img
+                src="assets/review_avatar.png"
+                alt="client-avatar"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+              <figcaption class="offscreen">review__avatar</figcaption>
+            </figure>
 
-          <div class="review__card-avatar">
-            <p class="review__card-avatar-name">Codde</p>
-            <p class="review__card-avatar-position">Lennox</p>
+            <div class="review__card-rating">
+              <figure class="review__card-rating-icon">
+                <img
+                  src="assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt=""
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <p class="review__card-rating-number">(5.0)</p>
+            </div>
+
+            <figure class="review__card_quotes">
+              <img
+                src="/assets/icon_review_quote.svg"
+                alt=""
+                width="40"
+                height="auto"
+                loading="lazy"
+              />
+              <figcaption class="offscreen">review stars</figcaption>
+            </figure>
+
+            <p class="review__card-copy">
+              We partnered with Code for a complete website redesign, and the
+              results exceeded expectations.Their attention to detail and
+              thoughtful execution made the entire process smooth and impactful.
+              The new layout is clean, responsive, and aligned seamlessly with
+              our brand identity.
+            </p>
+
+            <div class="review__card-avatar">
+              <p class="review__card-avatar-name">Mollin Muchabwera</p>
+              <p class="review__card-avatar-position">MollyMuch Innovations</p>
+            </div>
+          </div>
+
+          <!-- \\CARD-03 -->
+          <div class="review__card">
+            <figure class="review__avatar">
+              <img
+                src="assets/review_avatar.png"
+                alt="client-avatar"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+              <figcaption class="offscreen">review__avatar</figcaption>
+            </figure>
+
+            <div class="review__card-rating">
+              <figure class="review__card-rating-icon">
+                <img
+                  src="assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt=""
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <figure class="review__card-rating-icon">
+                <img
+                  src="/assets/icon_review_star.svg"
+                  alt="review-star"
+                  width="15"
+                  height="auto"
+                  loading="lazy"
+                />
+                <figcaption class="offscreen">review stars</figcaption>
+              </figure>
+              <p class="review__card-rating-number">(5.0)</p>
+            </div>
+
+            <figure class="review__card_quotes">
+              <img
+                src="/assets/icon_review_quote.svg"
+                alt=""
+                width="40"
+                height="auto"
+                loading="lazy"
+              />
+              <figcaption class="offscreen">review stars</figcaption>
+            </figure>
+
+            <p class="review__card-copy">
+              We partnered with Code for a complete website redesign, and the
+              results exceeded expectations.Their attention to detail and
+              thoughtful execution made the entire process smooth and impactful.
+              The new layout is clean, responsive, and aligned seamlessly with
+              our brand identity.
+            </p>
+
+            <div class="review__card-avatar">
+              <p class="review__card-avatar-name">Mollin Muchabwera</p>
+              <p class="review__card-avatar-position">Continexta</p>
+            </div>
           </div>
         </div>
-
-        <!-- \\CARD-02 -->
-
-        <div class="review__card">
-          <figure class="review__avatar">
-            <img
-              src="assets/review_avatar.png"
-              alt="client-avatar"
-              width="60"
-              height="60"
-              loading="lazy"
-            />
-            <figcaption class="offscreen">review__avatar</figcaption>
-          </figure>
-
-          <div class="review__card-rating">
-            <figure class="review__card-rating-icon">
-              <img
-                src="assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt=""
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <p class="review__card-rating-number">(5.0)</p>
-          </div>
-
-          <figure class="review__card_quotes">
-            <img
-              src="/assets/icon_review_quote.svg"
-              alt=""
-              width="40"
-              height="auto"
-              loading="lazy"
-            />
-            <figcaption class="offscreen">review stars</figcaption>
-          </figure>
-
-          <p class="review__card-copy">
-            We partnered with Code for a complete website redesign, and the
-            results exceeded expectations.Their attention to detail and
-            thoughtful execution made the entire process smooth and impactful.
-            The new layout is clean, responsive, and aligned seamlessly with our
-            brand identity.
-          </p>
-
-          <div class="review__card-avatar">
-            <p class="review__card-avatar-name">Mollin Muchabwera</p>
-            <p class="review__card-avatar-position">MollyMuch Innovations</p>
-          </div>
-        </div>
-
-        <!-- \\CARD-03 -->
-        <div class="review__card">
-          <figure class="review__avatar">
-            <img
-              src="assets/review_avatar.png"
-              alt="client-avatar"
-              width="60"
-              height="60"
-              loading="lazy"
-            />
-            <figcaption class="offscreen">review__avatar</figcaption>
-          </figure>
-
-          <div class="review__card-rating">
-            <figure class="review__card-rating-icon">
-              <img
-                src="assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt=""
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <figure class="review__card-rating-icon">
-              <img
-                src="/assets/icon_review_star.svg"
-                alt="review-star"
-                width="15"
-                height="auto"
-                loading="lazy"
-              />
-              <figcaption class="offscreen">review stars</figcaption>
-            </figure>
-            <p class="review__card-rating-number">(5.0)</p>
-          </div>
-
-          <figure class="review__card_quotes">
-            <img
-              src="/assets/icon_review_quote.svg"
-              alt=""
-              width="40"
-              height="auto"
-              loading="lazy"
-            />
-            <figcaption class="offscreen">review stars</figcaption>
-          </figure>
-
-          <p class="review__card-copy">
-            We partnered with Code for a complete website redesign, and the
-            results exceeded expectations.Their attention to detail and
-            thoughtful execution made the entire process smooth and impactful.
-            The new layout is clean, responsive, and aligned seamlessly with our
-            brand identity.
-          </p>
-
-          <div class="review__card-avatar">
-            <p class="review__card-avatar-name">Mollin Muchabwera</p>
-            <p class="review__card-avatar-position">Continexta</p>
-          </div>
-        </div>
-      </div>
       </div>
     </section>
 
     <!-- about us -->
     <section class="about">
-      <div class="about__content">
+      <div class="about__content" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
         <h3 class="about__title">About Us</h3>
         <h2 class="about__subtitle">Meet The Minds Behind The Innovation</h2>
         <p class="about__description">
@@ -625,7 +634,8 @@
         </p>
       </div>
 
-      <div class="about__card">
+      <div class="about__card" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
         <div class="about__card01">
           <div class="about__card-visual">
             <figure class="about__card-visual-image">
@@ -708,11 +718,14 @@
 
     <!-- faqs -->
     <section class="faq">
-      <h3 class="faq-title">FAQs</h3>
+      <div class="faq__header" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+        <h3 class="faq-title">FAQs</h3>
       <h2 class="faq-subtitle">Frequently Asked Questions</h2>
+      </div>
 
-      <div class="faq-cards">
-        <div class="faq-card">
+      <div class="faq-cards" data-aos="fade-up">
+        <div class="faq-card" >
           <div class="faq-card__question">
             <p class="faq-card__question-text">What services do you offer?</p>
             <p class="faq-card__icon">+</p>
@@ -881,5 +894,6 @@
     </footer>
 
     <script type="module" src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

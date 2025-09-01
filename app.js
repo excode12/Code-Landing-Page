@@ -65,5 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyStackTransforms();
 
-  setInterval(shuffleStack, 5000); 
+  setInterval(shuffleStack, 5000);
+});
+
+// AOS
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
 });
