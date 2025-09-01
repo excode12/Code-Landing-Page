@@ -132,7 +132,7 @@ a:any-link {
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-  margin: 13px 70px;
+  margin: 13px 30px;
 }
 
 .toggle__logo img {
