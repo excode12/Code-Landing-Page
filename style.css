@@ -63,9 +63,9 @@ iframe {
   left: -10000px;
 }
 
- .nowrap {
+.nowrap {
   white-space: nowrap;
-} 
+}
 
 .center {
   text-align: center;
@@ -135,6 +135,14 @@ a:any-link {
   margin: 13px 50px;
 }
 
+.toggle-menu__item:hover {
+  scale: 1.5;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  scale: 1.2;
+}
 .toggle__logo img {
   width: 73px;
   height: 40px;
@@ -202,7 +210,12 @@ a:any-link {
   border-radius: 13px;
   box-shadow: var(--BTN-SHADOW);
 }
-
+.cta-btn__connect:hover,
+.cta-btn__connect:focus {
+ background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2)
+}
 /* || NAV-HEADER */
 .nav-header {
   display: flex;
@@ -437,7 +450,6 @@ a:any-link {
   align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
- 
 }
 
 .services_title {
@@ -467,7 +479,6 @@ a:any-link {
   padding: 32px 0px 32px 0px;
   border-radius: 0.3125rem;
   margin-top: 14px;
-  
 }
 .services_card:hover {
   rotate: 4deg;
@@ -633,12 +644,10 @@ a:any-link {
   transform: translate(-50%, -50%);
   transform-origin: center center;
   transition: transform 1.5s ease;
-
 }
 .card-container:hover .review__card {
   animation-play-state: paused;
 }
-
 
 .review__card-rating {
   display: flex;
