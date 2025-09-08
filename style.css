@@ -703,6 +703,7 @@ a:any-link {
   align-items: center;
   flex-flow: column;
   gap: 8px;
+  margin-bottom: 80px;
 }
 
 .about__title {
@@ -728,6 +729,7 @@ a:any-link {
   display: flex;
   flex-flow: column;
   align-items: center;
+  gap: 9.375rem;
 }
 
 .about__card-visual {
@@ -736,7 +738,6 @@ a:any-link {
   height: 180px;
   background-color: var(--CRL-WHITE);
   border-radius: 12px;
-  margin-top: 80px;
   transition: 0.3s all ease;
 }
 
@@ -1216,6 +1217,7 @@ a:any-link {
   }
   .about__content {
     gap: 16px;
+    margin-bottom: 10px;
   }
   .about__title {
     font: var(--SUBTITLE);
