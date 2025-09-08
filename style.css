@@ -703,7 +703,7 @@ a:any-link {
   align-items: center;
   flex-flow: column;
   gap: 8px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .about__title {
@@ -729,7 +729,8 @@ a:any-link {
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 9.375rem;
+  gap: 1.25rem;
+  margin-bottom: 50px;
 }
 
 .about__card-visual {
@@ -751,6 +752,8 @@ a:any-link {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  height: 200px;
+ 
 }
 
 .about__card-visual-tag {
@@ -1251,7 +1254,6 @@ a:any-link {
     border-radius: 20px;
     margin-top: 140px;
   }
-
   .about__card-visual-image img {
     position: absolute;
     bottom: 0;
